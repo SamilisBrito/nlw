@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*largura e altura total do elemento*/
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 16px; /*espaço entre as imagens dentro da lista*/
+    margin-top: 24px;
+    flex-wrap: wrap;
+
+}
+
+body{
+    background-image: url(./img/bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: #121214;
+}
+
+ /* * {
+    border: 1px solid yellow;
+} */
+
+header {
+   padding-top: 32px;
+   height: calc(120px + 32px);
+   /* text-align: center;   */
+ }
+
+ header div {
+   width: 120px;
+   margin: auto;
+   background-image: linear-gradient( to right, #9572FC, #43E7AD, #E2D45C); 
+   border-radius: 50%;
+   display: flex; /*poder centralizar ela*/
+   padding: 4px;
+
+   transition: transform .3s; /*dá uma suavizada de 3 segundos*/
+}
+
+/*dá a sensação de dar um zoom*/
+header div:hover{
+   transform: scale(1.1);
+}
+ 
+ header div img {
+   border-radius: 50%;
+   width: 100%;
+ }
+
+main {
+    max-width: 580px; /* meio que o valor fica fixo a este */
+    width: 90%; /* ajusta automáticamente 90% na tela*/
+    margin: 32px auto;
+    display: grid; /* o grid desbloqueia a utilização do gap, mas os elementos continuam embaixo um do outro*/
+    gap: 24px;
+    
+}
+main * {
+    border-radius: 8px;
+}
+
+main div {
+   background-color: #2A2634;
+   padding: 24px 32px 32px;
+ }
+
+
+section {
+   padding: 4px 0px 0px;
+   background-image: linear-gradient( to right, #9572FC, #43E7AD, #E2D45C); 
+   border-top: 10px;
+   border-radius: 10px;
+ }
+
+section h2 {
+    letter-spacing: -0.47px;
+    margin-bottom: 5px;
+  }
+
+ section p {
+    color: #A1A1AA;
+    letter-spacing: -0.18px;
+ }
+
+ .youtube-list img {
+    border-radius: 8px;
+    width: 120px;
+    height: 120px;
+ }
+
+.game-list img {
+    border-radius: 50%;
+    width: 50px;
+    border: 1px #443E54 solid ;
+ }
+
+ /*listas pulsantes*/
+ li{
+   transition: transform .3s;
+ }
+
+ li:hover{
+   transform: scale(1.1);
+ }
+
+ /*Animação*/
+ 
+header div {
+  animation: fromTop .7s .2s backwards;
+ }
+
+main section  {
+  animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1) {
+  animation-delay: .0s;
+}
+
+main section:nth-child(2) {
+  animation-delay: .3s;
+}
+
+main section:nth-child(3) {
+  animation-delay: .6s;
+}
+
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  top {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  top {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes fromL {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  top {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
+
+
