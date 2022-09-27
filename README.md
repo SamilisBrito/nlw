@@ -4,7 +4,7 @@
 
 >Trilha Explore
 
-Projeto construído do evento Next Lelevl Week da Rocksetseat.
+Projeto construído durante o evento Next Lelevl Week da Rocksetseat.
 
 [Click aqui para acessar](https://samilisbrito.github.io/nlw/)
 
